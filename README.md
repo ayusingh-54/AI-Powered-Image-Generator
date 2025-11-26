@@ -13,16 +13,16 @@ A sophisticated text-to-image generation system powered by **Stable Diffusion** 
 
 ## ✨ Features
 
-| Feature | Description |
-|---------|-------------|
-| 🎨 **Text-to-Image** | Generate images from text descriptions using Stable Diffusion v1.5 |
-| 🖥️ **Web Interface** | Beautiful Streamlit UI with real-time progress tracking |
-| ⚡ **GPU & CPU Support** | CUDA acceleration for NVIDIA GPUs, CPU fallback for all systems |
-| 🎭 **13 Style Presets** | Photorealistic, Anime, Oil Painting, Cyberpunk, and more |
-| 📁 **Smart Storage** | Automatic organization with metadata and timestamps |
-| 🛡️ **Content Safety** | Built-in content filtering and AI watermarking |
-| 🔧 **Customizable** | Adjustable steps, guidance scale, seeds, and resolutions |
-| 📦 **Batch Processing** | Generate multiple images with CLI tools |
+| Feature                  | Description                                                        |
+| ------------------------ | ------------------------------------------------------------------ |
+| 🎨 **Text-to-Image**     | Generate images from text descriptions using Stable Diffusion v1.5 |
+| 🖥️ **Web Interface**     | Beautiful Streamlit UI with real-time progress tracking            |
+| ⚡ **GPU & CPU Support** | CUDA acceleration for NVIDIA GPUs, CPU fallback for all systems    |
+| 🎭 **13 Style Presets**  | Photorealistic, Anime, Oil Painting, Cyberpunk, and more           |
+| 📁 **Smart Storage**     | Automatic organization with metadata and timestamps                |
+| 🛡️ **Content Safety**    | Built-in content filtering and AI watermarking                     |
+| 🔧 **Customizable**      | Adjustable steps, guidance scale, seeds, and resolutions           |
+| 📦 **Batch Processing**  | Generate multiple images with CLI tools                            |
 
 ---
 
@@ -114,27 +114,27 @@ python batch_generate.py --prompts example_prompts.txt --output ./batch_output
 
 ### Style Presets
 
-| Style | Description |
-|-------|-------------|
+| Style          | Description                   |
+| -------------- | ----------------------------- |
 | Photorealistic | Professional photography look |
-| Digital Art | Modern digital illustration |
-| Oil Painting | Classical fine art style |
-| Watercolor | Soft, flowing paint effect |
-| Anime | Japanese animation style |
-| Cyberpunk | Futuristic neon aesthetic |
-| Fantasy | Magical, mythical artwork |
-| 3D Render | CGI quality graphics |
-| Sketch | Hand-drawn pencil look |
-| Vintage | Retro, aged photograph |
+| Digital Art    | Modern digital illustration   |
+| Oil Painting   | Classical fine art style      |
+| Watercolor     | Soft, flowing paint effect    |
+| Anime          | Japanese animation style      |
+| Cyberpunk      | Futuristic neon aesthetic     |
+| Fantasy        | Magical, mythical artwork     |
+| 3D Render      | CGI quality graphics          |
+| Sketch         | Hand-drawn pencil look        |
+| Vintage        | Retro, aged photograph        |
 
 ### Generation Parameters
 
-| Parameter | Range | Default | Description |
-|-----------|-------|---------|-------------|
-| Steps | 10-100 | 30 | More steps = better quality, slower |
-| Guidance | 1-20 | 7.5 | Higher = follows prompt more closely |
-| Size | 512-768 | 512x512 | Image resolution |
-| Seed | Any | Random | For reproducible results |
+| Parameter | Range   | Default | Description                          |
+| --------- | ------- | ------- | ------------------------------------ |
+| Steps     | 10-100  | 30      | More steps = better quality, slower  |
+| Guidance  | 1-20    | 7.5     | Higher = follows prompt more closely |
+| Size      | 512-768 | 512x512 | Image resolution                     |
+| Seed      | Any     | Random  | For reproducible results             |
 
 ---
 
@@ -142,24 +142,24 @@ python batch_generate.py --prompts example_prompts.txt --output ./batch_output
 
 ### Minimum (CPU Mode)
 
-| Component | Requirement |
-|-----------|-------------|
-| **OS** | Windows 10/11, Ubuntu 20.04+, macOS 10.15+ |
-| **CPU** | Intel i5 / AMD Ryzen 5 |
-| **RAM** | 8GB |
-| **Storage** | 10GB free |
-| **Speed** | ~5-10 min per image |
+| Component   | Requirement                                |
+| ----------- | ------------------------------------------ |
+| **OS**      | Windows 10/11, Ubuntu 20.04+, macOS 10.15+ |
+| **CPU**     | Intel i5 / AMD Ryzen 5                     |
+| **RAM**     | 8GB                                        |
+| **Storage** | 10GB free                                  |
+| **Speed**   | ~5-10 min per image                        |
 
 ### Recommended (GPU Mode)
 
-| Component | Requirement |
-|-----------|-------------|
-| **OS** | Windows 10/11, Linux |
-| **GPU** | NVIDIA RTX 3060+ (8GB+ VRAM) |
-| **CPU** | Intel i7 / AMD Ryzen 7 |
-| **RAM** | 16GB |
-| **Storage** | 20GB SSD |
-| **Speed** | ~5-10 sec per image |
+| Component   | Requirement                  |
+| ----------- | ---------------------------- |
+| **OS**      | Windows 10/11, Linux         |
+| **GPU**     | NVIDIA RTX 3060+ (8GB+ VRAM) |
+| **CPU**     | Intel i7 / AMD Ryzen 7       |
+| **RAM**     | 16GB                         |
+| **Storage** | 20GB SSD                     |
+| **Speed**   | ~5-10 sec per image          |
 
 ---
 
@@ -174,12 +174,12 @@ This tool includes built-in safety features:
 
 ### Responsible Use
 
-| ✔️ Allowed | ❌ Prohibited |
-|-----------|--------------|
+| ✔️ Allowed              | ❌ Prohibited               |
+| ----------------------- | --------------------------- |
 | Creative art and design | Deepfakes or misinformation |
-| Educational purposes | Illegal content |
-| Personal projects | Copyright infringement |
-| Concept prototyping | Impersonation |
+| Educational purposes    | Illegal content             |
+| Personal projects       | Copyright infringement      |
+| Concept prototyping     | Impersonation               |
 
 See [ETHICAL_GUIDELINES.md](ETHICAL_GUIDELINES.md) for complete details.
 
@@ -301,13 +301,13 @@ enhanced = enhancer.enhance_prompt("a cat", style="Photorealistic")
 
 ## 📊 Performance Benchmarks
 
-| Configuration | Resolution | Steps | Time |
-|---------------|------------|-------|------|
-| RTX 4090 | 512x512 | 30 | ~3s |
-| RTX 3060 | 512x512 | 30 | ~8s |
-| RTX 3060 | 768x768 | 30 | ~15s |
-| CPU (i7) | 512x512 | 30 | ~5min |
-| CPU (i7) | 512x512 | 20 | ~3.5min |
+| Configuration | Resolution | Steps | Time    |
+| ------------- | ---------- | ----- | ------- |
+| RTX 4090      | 512x512    | 30    | ~3s     |
+| RTX 3060      | 512x512    | 30    | ~8s     |
+| RTX 3060      | 768x768    | 30    | ~15s    |
+| CPU (i7)      | 512x512    | 30    | ~5min   |
+| CPU (i7)      | 512x512    | 20    | ~3.5min |
 
 ---
 
@@ -351,9 +351,8 @@ Contributions are welcome! Please:
 
 **Built with ❤️ for the AI community**
 
-*Part of the Talrn.com AI Selection Task*
+_Part of the Talrn.com AI Selection Task_
 
 ⭐ Star this repo if you find it helpful!
 
 </div>
-
